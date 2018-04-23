@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+}
+ p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+}
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+#header{
+	margin: 16% 8% 3% 8%;
+	height: 75px;
+}
+#header > span{
+	font-family: CormorantGaramond;
+  	font-size: 70px;
+ 	font-weight: bold;
+ 	color: #394048;
+}
+#close{
+	float:right;
+	transform: translate(0,-100%);
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#privacy-main{
+	display: flex;
+	flex-flow: row	wrap;
+	justify-content: center;
+}
+
+.privacy-info{
+		flex-basis: 68%;
+		margin: 0 24% 30px 8%;
+		color: #394048;
+}
+.point{
+	padding-left: 25px;
+	padding-right: 15px;
+	font-size: 20px;
+}
+
+
+.privacy-sub-title{
+	margin: 20px 24% 30px 8%;
+	font-weight: bold;
+}
+
+div.info{
+	flex-basis: 68%;
+		margin: 0 24% 30px 8%;
+}
+
+@media only screen and (max-width: 850px){
+	#header > span{
+		font-size: 45px;
+}
+	#close{
+		transform: none;
+		margin-bottom: 0;
+	}
+	.privacy-info {
+    flex-basis: 100%;
+    margin: 0 8% 30px 8%;
+  }
+}
+@media only screen and (max-width: 600px){
+	#close{
+		position: absolute;
+		right: 0;
+		top: 16%;
+		transform: (0,-50%);
+		margin-bottom: 0;
+	}
+
+}
