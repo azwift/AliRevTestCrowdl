@@ -66,7 +66,7 @@ a{
 	border-radius: 2px;
 }
 .bar img{
-	height: fit-content;
+  height: 75%;;
 	margin-left: 5%;
 }
 .bar nav {
@@ -402,7 +402,7 @@ div.info > p{
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
 }
-#send:after{
+/*#send:after{
 	content:"We will be in touch in a day or two.";
 	font-family: CormorantGaramond;
 	font-size: 20px;
@@ -412,7 +412,17 @@ div.info > p{
 	transform: 	translate(90px,10px);
 	cursor: default;
 	width:302px;
+	z-index: -1;
 }
+*/
+#sendSubText{
+    font-family: CormorantGaramond;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+}
+
 #send:before{
 	content: " ...................... ";
 	font-size: 20px;
@@ -601,7 +611,7 @@ div.info > p{
 		margin-top: 40px;
 	}
 	.input > input{
-		font-style: 14px;
+		font-size: 14px;
 	}
 }
 @media only screen and (max-width: 600px){
@@ -636,5 +646,8 @@ div.info > p{
 	.bar ul{
 		margin-right: 0px;
 	}
-
+	#sendSubText{
+	    font-size: 12px;
+	    padding: 5px;
+	}
 }
