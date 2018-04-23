@@ -75,7 +75,8 @@ div.info{
 		font-size: 30px;
 }
 #header{
-		margin: 16% 8% 0% 8%;
+		margin: 16% 8% 6% 8%;
+		height:40px;
 }
 	#close{
 		position: absolute;
