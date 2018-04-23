@@ -402,19 +402,7 @@ div.info > p{
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
 }
-/*#send:after{
-	content:"We will be in touch in a day or two.";
-	font-family: CormorantGaramond;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	position: absolute;	
-	transform: 	translate(90px,10px);
-	cursor: default;
-	width:302px;
-	z-index: -1;
-}
-*/
+
 #sendSubText{
     font-family: CormorantGaramond;
     font-size: 20px;
@@ -429,7 +417,7 @@ div.info > p{
 	color: transparent;
 	transform: translate(-28%,35px);
 	box-shadow: 0 0 35px 7px #1b1616;
-	background: #1b1616;
+	background: #1b161673;
 	height: 1px;
 	position: absolute;	
 	z-index: -1;
@@ -440,6 +428,7 @@ div.info > p{
 }
 #send:active{
 	transform: translate(0,1px);
+	box-shadow: inset 0 0 5px 1px #394048;
 }
 
 #send:hover{
@@ -655,5 +644,18 @@ div.info > p{
 	#sendSubText{
 	    font-size: 12px;
 	    padding: 5px;
+	    padding-top: 	15px;
+	}
+	.want-in > div{
+		display: flex;
+    flex-wrap: wrap;
+	}
+	#send{
+		width: 120px;
+		height: 39px;
+	}
+	#send:before{
+				transform: translate(-28%,30px);
+				    font-size: 19px;
 	}
 }
